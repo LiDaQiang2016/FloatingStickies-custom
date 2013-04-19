@@ -1276,6 +1276,8 @@ public abstract class StandOutWindow extends Service {
 								// memory
 								startedForeground = false;
 								stopForeground(true);
+								// I don't like apps those remains in the list of running.
+								stopSelf();
 							}
 						}
 					});
